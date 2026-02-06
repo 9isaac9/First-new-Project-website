@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
@@ -20,9 +23,13 @@
 
 
         <header>
+            <div class="row"></div>
+
+
+
             <div>
                 <h1>Best place to learn Frontend</h1>
-                <p>Go from absolute beginner to pro with a simplified process</p>
+                <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
                 <button>Start now</button>
             </div>
 
@@ -37,31 +44,50 @@
     <main>
         <section id="about">
             <h2>About us</h2>
-            <div>
-                <img src="./assets/about.png" alt="About us image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <div class="row">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+
+
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, voluptate.</p>
+
+
+                        <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, voluptate.</p>
+                    </div>
+
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/about.jpg" alt="About us image">
+                    </figure>
+                </div>
             </div>
-
-            <figure>
-                <img src="./assets/about.jpg" alt="">
-            </figure>
         </section>
 
 
 
 
-        <section id="discord"></section>
+
+        <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="Discord image">
-            </figure>
+            <div class="row">
+                <div class="section__description">
 
-            <div>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="Discord image">
+                    </figure>
+
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">L>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, voluptate.</p>
+
+                        <p class="section__description--para">L >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptas, voluptate.</p>
+                    </div>
+                </div>   
             </div>
         </section>
 
@@ -71,31 +97,37 @@
 
 
 
-        <section id="contact"></section>
+        <section id="contact">
             <h2>contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
 
                 <span>Message</span>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
-            <button>Submit</button>
+                <textarea type="text" placeholder="Cool website, lets get connected!"></textarea>
+                <button>Contact Us!</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <img src="./assets/FES.svg" alt="">
 
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
-        </div>  
+
+
+
+
+
+    <footer>
+        <img class="footer__img" src="./assets/FES.svg" alt="">
+
+        <div class="footer__links">
+            <a class="footer__links" href="#about">About</a>
+            <a class="footer__links" href="#discord">Discord</a>
+            <a class="footer__links" href="#contact">Contact</a>
+            <a class="footer__links" href="">Courses</a>
+        </div>
 
         <p>Copyright Frontend Simplified</p>
-    </footer>       
+    </footer>
 
 
 
